@@ -1,0 +1,113 @@
+@import "https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap";
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$white: rgb(246, 246, 244);
+$green: rgb(127, 120, 102);
+$red: rgb(209, 116, 126);
+$light-grey: rgb(163, 166, 171);
+$grey: rgb(86, 86, 86);
+
+* {
+    font-family: "Sometype Mono", monospace;
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    @include flex;
+    background: $white;
+    height: 100vh;
+    width: 100vw;
+
+    h1, div, button {
+        border-radius: 20px;
+    }
+
+    main {
+        @include flex;
+        aspect-ratio: 0.8;
+        border-radius: 50px;
+        flex-direction: column;
+        height: 70vh;
+
+        #screen { 
+            @include flex;
+            
+            background: $green;
+            box-shadow: 5px 5px 0px rgb(77, 70, 32);
+            color: rgb(0 0 0 / 0.4);
+            height: 15%;
+            width: 80%;
+
+            h1 {
+                @include flex;
+
+                height: 90%;
+                justify-content: flex-end;
+                width: 90%;
+            }
+        }
+
+        #buttons {
+            @include flex;
+            flex-direction: column;
+            height: 70%;
+            width: 90%;
+
+            div {
+                @include flex;
+                height: 22.5%;
+                width: 100%;
+
+                button {
+                    @include flex;
+
+                    aspect-ratio: 1;
+                    border: 0px;
+                    font-size: 70%;
+                    margin: 1.5%;
+                    position: relative;
+                    transition: 0.1s;
+                    width: 18.875%;
+                }
+            }
+        }
+    }
+}
+
+.r { 
+    background: $red;
+    box-shadow: 5px 5px 0px rgb(159, 66, 76);
+    color: white;
+
+    &:hover {
+        box-shadow: 3px 3px 0px rgb(159, 66, 76);
+    }
+}
+
+.lg {
+    background: $light-grey;
+    box-shadow: 5px 5px 0px rgb(113, 116, 121);
+    color: black;
+
+    &:hover {
+        box-shadow: 3px 3px 0px rgb(113, 116, 121);
+    }
+}
+
+.g {
+    background: $grey;
+    box-shadow: 5px 5px 0px rgb(36, 36, 36);
+    color: white;
+
+    &:hover {
+        box-shadow: 3px 3px 0px rgb(36, 36, 36);
+    }
+}

@@ -1,0 +1,101 @@
+@import "https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap";
+* {
+  font-family: "Sometype Mono", monospace;
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(246, 246, 244);
+  height: 100vh;
+  width: 100vw;
+}
+body h1, body div, body button {
+  border-radius: 20px;
+}
+body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 0.8;
+  border-radius: 50px;
+  flex-direction: column;
+  height: 70vh;
+}
+body main #screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(127, 120, 102);
+  box-shadow: 5px 5px 0px rgb(77, 70, 32);
+  color: rgba(0, 0, 0, 0.4);
+  height: 15%;
+  width: 80%;
+}
+body main #screen h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  justify-content: flex-end;
+  width: 90%;
+}
+body main #buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70%;
+  width: 90%;
+}
+body main #buttons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22.5%;
+  width: 100%;
+}
+body main #buttons div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  border: 0px;
+  font-size: 70%;
+  margin: 1.5%;
+  position: relative;
+  transition: 0.1s;
+  width: 18.875%;
+}
+
+.r {
+  background: rgb(209, 116, 126);
+  box-shadow: 5px 5px 0px rgb(159, 66, 76);
+  color: white;
+}
+.r:hover {
+  box-shadow: 3px 3px 0px rgb(159, 66, 76);
+}
+
+.lg {
+  background: rgb(163, 166, 171);
+  box-shadow: 5px 5px 0px rgb(113, 116, 121);
+  color: black;
+}
+.lg:hover {
+  box-shadow: 3px 3px 0px rgb(113, 116, 121);
+}
+
+.g {
+  background: rgb(86, 86, 86);
+  box-shadow: 5px 5px 0px rgb(36, 36, 36);
+  color: white;
+}
+.g:hover {
+  box-shadow: 3px 3px 0px rgb(36, 36, 36);
+}/*# sourceMappingURL=style.css.map */
